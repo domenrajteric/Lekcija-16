@@ -20,10 +20,10 @@ def index():
         answer = request.form.get("answer")
 
         if answer and answer.isdigit() and int(answer) == result:
-            message = f"Correct answer! :){number1} x {number2} = {result}"
+            message = f"Correct answer! :) {number1} x {number2} = {result}"
             streak += 1
         else:
-            message = f"Wrong answer! :({number1} x {number2} = {result}"
+            message = f"Wrong answer! :( {number1} x {number2} = {result}"
             streak = 0
 
         number1 = random.randint(0, 25)
